@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* BURGUNDY CUSTOM PALETTE ACCENTS */
+  .bg-burgundy-950 { background-color: #2b020a; }
+  .bg-burgundy-900 { background-color: #4a0414; }
+  .bg-burgundy-800 { background-color: #63051b; }
+  .bg-burgundy-700 { background-color: #831843; }
+  .border-burgundy-900 { border-color: #4a0414; }
+  .border-burgundy-700 { border-color: #831843; }
+  .border-burgundy-500 { border-color: #fb7185; }
+  .text-burgundy-200 { color: #fecdd3; }
+  .text-burgundy-400 { color: #fb7185; }
+}
+
+/* OVERLAYS & BADGES FROM USER PROTOTYPE */
+.overlay-item {
+  position: absolute;
+  pointer-events: auto;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 35;
+}
+
+.cake-badge {
+  background: #831843;
+  border: 7px solid #ffffff;
+  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cake-badge .number {
+  font-size: 68px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+  -webkit-text-stroke: 2px #4a0414;
+}
+
+.cake-badge .sub-icon {
+  font-size: 34px;
+  color: #f59e0b;
+  margin-top: 4px;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a0414;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #831843;
+}

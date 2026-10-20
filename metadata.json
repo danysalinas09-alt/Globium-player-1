@@ -1,0 +1,6 @@
+{
+  "name": "GLOBIUM English - 13 Levels & Interactive Learning Player",
+  "description": "English learning platform with 13 levels (Part A and B, Lessons 1-15 & 17-31), interactive video player with overlay badges, whiteboard, vocabulary flashcards, and teaching materials management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
